@@ -3,14 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Monstr</title>
+    <style>
+    form {
+        margin-bottom: 2em;
+          label {
+          /* To make sure that all labels have the same size and are properly aligned */
+          display: inline-block;
+          width: 90px;
+          text-align: right;
+          }
+
+          input, textarea {
+          /* To make sure that all text fields have the same font settings
+             By default, textareas have a monospace font */
+          font: 1em sans-serif;
+
+          /* To give the same size to all text fields */
+          width: 300px;
+          box-sizing: border-box;
+
+        }
+    </style>
   </head>
   <body>
-    <h1>Monstr Inc.</h1>
+    <h1>Monster Inc.</h1>
     <div id='create-monster'></div>
     <div id='monster-container'></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
-    <!-- <script src='index.js'></script> -->
-    <script src='demo.js'></script>
+    <script src='index.js'></script>
+    <!-- <script src='demo.js'></script> -->
   </body>
 </html>
